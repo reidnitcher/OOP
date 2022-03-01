@@ -2,13 +2,13 @@ import cellphone_class as cp
 
 def main():
     #get the manufacturer from use
-    manufact = str(input('Enter the manufacturer: '))
+    manufact = 'Apple'
     #get model number from user
-    model = str(input('Enter the model number: '))
+    model = "iPhone 13"
     #get retail price from user
-    price = float(input("Enter the retail price: "))
+    price = 899
 
-    phone = cp.CellPhone(manufact, model, price)
+    phone = cp.ne(manufact, model, price)
 
     print("Here is your phone data: ")
     print("Manufacturer: ",  phone.get_manufact())

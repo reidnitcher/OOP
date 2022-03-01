@@ -1,11 +1,13 @@
 class Phone:    
-
+# the init method intializes the attributes
     def __init__(self, manufact, model, price):
         self.__manufact = manufact
         self.__model = model
         self.__retail_price = price
     
-    def set_manufact(self,manufact):
+    #The set_manufact method accepts an argument for the manufactures nubmer
+
+    def set_manufact(self, manufact):
         self.__manufact = manufact
 
     def set_model(self, model):
@@ -21,7 +23,7 @@ class Phone:
         return self.__model
 
     def get_retail_price(self):
-        return self.__price
+        return self.__retail_price
 
 
    
